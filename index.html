@@ -1,0 +1,1031 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Ismail Portfolio</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <link rel="icon" href="image/afficherPhotoUtilisateur.jpg" type="image/jpg">
+ 
+
+  <style>
+    body {
+      margin: 0;
+      overflow: hidden; /* Prevent scrolling during loading */
+      font-family: Arial, sans-serif;
+      transition: background-color 0.5s, color 0.5s;
+    }
+   
+    .loading-container {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 5px; /* Height of the loading line */
+      background-color: rgb(43, 13, 13);
+      z-index: 9999;
+    }
+    
+    .loading-line {
+      width: 0;
+      height: 100%;
+      background-color: orange;
+      transition: width 10s linear;
+    }
+    
+    .content1 {
+      padding: 20px;
+      opacity: 0.3; /* Initial opacity for visibility during loading */
+      transition: opacity 0.5s ease-in;
+      filter: blur(3px); /* Blur effect during loading */
+    }
+
+    .visible {
+      opacity: 1; /* Full opacity for visibility */
+      filter: blur(0); /* Remove blur effect */
+    }
+    label{
+      text-decoration: none;
+      padding: 10px;
+    }
+
+  /* Styles pour le menu */
+  #language {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 5px 10px;
+    margin-left: 10px;
+    background-color: #f9f9f9;
+    cursor: pointer;
+  }
+
+  /* Autres styles */
+  .header {
+    background-color: #fff;
+    padding: 10px 20px;
+  }
+
+  .navmenu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+  }
+
+  .navmenu li {
+    margin-right: 20px;
+  }
+
+  .navmenu a {
+    text-decoration: none;
+    color: #333;
+  }
+
+   
+
+    body.light-mode {
+      background-color: #ffffff;
+      color: #333;
+    }
+
+    body.dark-mode {
+      background-color: #121212;
+      color: #ffffff;
+    }
+
+  </style>
+</head>
+
+<body class="index-page " ></body>
+  <div class="loading-container">
+    <div class="loading-line" id="loadingLine"></div>
+  </div>
+
+  <div class="content1" id="mainContent">
+    <header id="header" class="header d-flex align-items-center sticky-top">
+      <div class="header-container container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+  
+        <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
+          <!-- Uncomment the line below if you also wish to use an image logo -->
+        <img src="image/afficherPhotoUtilisateur.jpg" alt=""> 
+         
+        </a>
+  
+        <nav id="navmenu" class="navmenu">
+          <ul>
+            <li><a href="#hero" class="active"  data-translate="home">Home</a></li>
+            <li><a href="#about" data-translate="about">About</a></li>
+            <li><a href="#resume"  data-translate="resume">Resume</a></li>
+            <li><a href="#portfolio" data-translate="Portofolio">Portfolio</a></li>
+            <li><a href="#services" data-translate="service">Services</a></li>
+              
+            <li><a href="#contact" data-translate="contact">Contact</a></li>
+            <li>
+          </li>
+            <li><a>
+              <label for="language"></label>
+              <select id="language">
+                <option value="fr">Français</option>
+                <option value="en" selected>English</option>
+             </select>
+            </a></li>
+          </ul>
+          <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+        </nav>
+  
+        <div class="header-social-links">
+          <a href="https://x.com/ismaelirad5799"><i class="bi bi-twitter-x"></i></a>
+          <a href="https://github.com/Lucky2574" target="_blank">
+            <i class="bi bi-github"></i>
+        </a>
+          <a href="https://www.facebook.com/profile.php?id=100080234683191"><i class="bi bi-facebook"></i></a>
+          <a href="https://www.instagram.com/ismaillucky32/"><i class="bi bi-instagram"></i></a>
+          <a href="https://www.linkedin.com/in/ismael-iradukunda-ba41882a7/"><i class="bi bi-linkedin"></i></a>
+        </div>
+  
+      </div>
+    </header>
+
+      
+
+    <main class="main">
+      <!-- Hero Section -->
+      <section id="hero" class="hero section">
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
+          <div class="row align-items-center content">
+            <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+              <h2 data-translate="crafting">Crafting Digital Experiences with Passion</h2>
+              <p class="lead" data-translate="transforming">Transforming ideas into elegant solutions through creative design and innovative development with <b>Ismail Iradukunda</b></p>
+              <div class="cta-buttons" data-aos="fade-up" data-aos-delay="300">
+                <a href="#contact" class="btn btn-outline" data-translate="let">Let's Connect</a>
+              </div>
+              <div class="hero-stats" data-aos="fade-up" data-aos-delay="400">
+                <div class="stat-item">
+                  <span class="stat-number">3+</span>
+                  <span class="stat-label" data-translate="years">Years Experience</span>
+                </div>
+                <div class="stat-item">
+                  <span class="stat-number">20+</span>
+                  <span class="stat-label" data-translate="projet">Projects Completed</span>
+                </div>
+                <div class="stat-item">
+                  <span class="stat-number">10+</span>
+                  <span class="stat-label" data-translate="happy">Happy Clients</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="hero-image">
+                <img src="assets/img/landing.svg" class="img-fluid" data-aos="zoom-out" data-aos-delay="300">
+                <div class="shape-1"></div>
+                <div class="shape-2"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section><!-- /Hero Section -->
+
+      <!-- About Section -->
+    <section id="about" class="about section light-background">
+
+        <!-- Section Title -->
+        <div class="container section-title" data-aos="fade-up">
+          <h2 data-translate="about">About</h2>
+          <div class="title-shape">
+            <svg viewBox="0 0 200 20" xmlns="http://www.w3.org/2000/svg">
+              <path d="M 0,10 C 40,0 60,20 100,10 C 140,0 160,20 200,10" fill="none" stroke="currentColor" stroke-width="2"></path>
+            </svg>
+          </div>
+          <p data-translate="aboutdescr"> Whether you're looking to revitalize your website or develop an innovative application, I am here to bring your visions to life. Explore my portfolio, and let’s discover how I can elevate your project to new heights. 😋</p>
+        </div><!-- End Section Title -->
+  
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
+  
+          <div class="row align-items-center">
+            <div class="col-lg-6 position-relative" data-aos="fade-right" data-aos-delay="200">
+              <div class="about-image">
+                <img src="image/IMG-20250305-WA0167.jpg" alt="Profile Image" class="img-fluid rounded-4">
+              </div>
+            </div>
+  
+            <div class="col-lg-6" data-aos="fade-left" data-aos-delay="300">
+              <div class="about-content">
+                <span class="subtitle" data-translate="me">About Me</span>
+  
+                <h2 data-translate="dev">UI/UX Designer &amp; Web Developer</h2>
+  
+                <p class="lead mb-4" data-translate="aboutdescription"> As a passionate UI/UX Designer and experienced Web Developer, I turn ideas into captivating digital experiences.
+                   My user-centered approach ensures that every project not only meets my clients' needs but also exceeds their expectations. With intuitive design and optimized functionality, I create interfaces that engage and retain users. 
+                  </p>
+           
+                <div class="personal-info">
+                  <div class="row g-4">
+                    <div class="col-6">
+                      <div class="info-item">
+                        <span class="label" data-translate="name">Name</span>
+                        <span class="value">Ismael Iradukunda</span>
+                      </div>
+                    </div>
+  
+                    <div class="col-6">
+                      <div class="info-item">
+                        <span class="label" data-translate="phone">Phone</span>
+                        <span class="value">+257 68505909</span>
+                      </div>
+                    </div>
+  
+                    <div class="col-6">
+                      <div class="info-item">
+                        <span class="label" data-translate="birth">Birth date</span>
+                        <span class="value" data-translate="birthdate">14th, August 2001</span>
+                      </div>
+                    </div>
+  
+                    <div class="col-6">
+                      <div class="info-item">
+                        <span class="label">Email</span>
+                        <span class="value">ismaeliradukunda01@gmail.com</span>
+                      </div>
+                    </div>
+  
+                    <div class="col-6">
+                      <div class="info-item">
+                        <span class="label">Occupation</span>
+                        <span class="value" data-translate="free">Freelancer</span>
+                      </div>
+                    </div>
+  
+                    <div class="col-6">
+                      <div class="info-item">
+                        <span class="label" data-translate="nation">Nationality</span>
+                        <span class="value" data-translate="bdi">Burundian</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+  
+                
+              </div>
+            </div>
+          </div>
+  
+        </div>
+  
+      </section><!-- /About Section -->
+  
+      <!-- Skills Section -->
+      <section id="skills" class="skills section">
+
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
+          <div class="container section-title" data-aos="fade-up">
+            <h2 data-translate="skills">Skills</h2>
+            <div class="title-shape">
+              <svg viewBox="0 0 200 20" xmlns="http://www.w3.org/2000/svg">
+                <path d="M 0,10 C 40,0 60,20 100,10 C 140,0 160,20 200,10" fill="none" stroke="currentColor" stroke-width="2"></path>
+              </svg>
+            </div>
+        
+          </div><!-- End Section Title -->
+    
+  
+          <div class="row g-4 skills-animation">
+           
+  
+            <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
+              <div class="skill-box">
+                <h3>HTML</h3>
+                
+                <span class="text-end d-block">90%</span>
+                <div class="progress">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div>
+            </div>
+  
+            <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="200">
+              <div class="skill-box">
+                <h3>CSS</h3>
+               
+                <span class="text-end d-block">90%</span>
+                <div class="progress">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div>
+            </div>
+  
+            <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
+              <div class="skill-box">
+                <h3>JavaScript</h3>
+                
+                <span class="text-end d-block">80%</span>
+                <div class="progress">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div>
+            </div>
+  
+            <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="400">
+              <div class="skill-box">
+                <h3>PHP</h3>
+                
+                <span class="text-end d-block">70%</span>
+                <div class="progress">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
+                  </div>
+                </div>
+              </div>
+            </div>
+  
+            <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="400">
+              <div class="skill-box">
+                <h3>Wordpress</h3>
+                
+                <span class="text-end d-block">90%</span>
+                <div class="progress">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+                  </div>
+                </div>
+              </div>
+            </div>
+  
+            <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="400">
+              <div class="skill-box">
+                <h3>C#</h3>
+                
+                <span class="text-end d-block">55%</span>
+                <div class="progress">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100">
+                  </div>
+                </div>
+              </div>
+            </div>
+  
+            <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="400">
+              <div class="skill-box">
+                <h3>Java</h3>
+                
+                <span class="text-end d-block">60%</span>
+                <div class="progress">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">
+                  </div>
+                </div>
+              </div>
+            </div>
+  
+            <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="400">
+              <div class="skill-box">
+                <h3>Python</h3>
+                
+                <span class="text-end d-block">50%</span>
+                <div class="progress">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+                  </div>
+                </div>
+              </div>
+            </div>
+  
+          </div>
+  
+        </div>
+  
+      </section>
+      
+      
+      <!-- /Skills Section -->
+  
+      <!-- Resume Section -->
+      <section id="resume" class="resume section">
+  
+        <!-- Section Title -->
+        <div class="container section-title" data-aos="fade-up">
+          <h2 data-translate="resume">Resume</h2>
+          <div class="title-shape">
+            <svg viewBox="0 0 200 20" xmlns="http://www.w3.org/2000/svg">
+              <path d="M 0,10 C 40,0 60,20 100,10 C 140,0 160,20 200,10" fill="none" stroke="currentColor" stroke-width="2"></path>
+            </svg>
+          </div>
+          <p data-translate="let">Let's connect</p>
+        </div><!-- End Section Title -->
+  
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
+  
+          <div class="row">
+            <div class="col-12">
+              <div class="resume-wrapper">
+               
+  
+                <div class="resume-block" data-aos="fade-up" data-aos-delay="100">
+                  <h2 data-translate="education">My Education</h2>
+                
+  
+                  <div class="timeline">
+                    <div class="timeline-item" data-aos="fade-up" data-aos-delay="200">
+                      <div class="timeline-left">
+                        <h4 class="company" data-translate="ub">University Of Burundi</h4>
+                        <span class="period">2022-2025</span>
+                      </div>
+                      <div class="timeline-dot"></div>
+                      <div class="timeline-right">
+                        <h3 class="position" data-translate="bac">Bachelor's Degree in</h3>
+                        <p class="description" data-translate="info">computer science</p>
+                      </div>
+                    </div>
+  
+                    <div class="timeline-item" data-aos="fade-up" data-aos-delay="300">
+                      <div class="timeline-left">
+                        <h4 class="company">L.S.T.A Rutovu </h4>
+                        <span class="period">2018 - 2021</span>
+                      </div>
+                      <div class="timeline-dot"></div>
+                      <div class="timeline-right">
+                        <h3 class="position" data-translate="highschool">High school Degree</h3>
+                        <p class="description" data-translate="ig">computer management</p>
+                      
+                      </div>
+                    </div>
+  
+                    <div class="timeline-item" data-aos="fade-up" data-aos-delay="400">
+                      <div class="timeline-left">
+                        <h4 class="company">ECOFO Kavimvira</h4>
+                        <span class="period">2009-2018</span>
+                      </div>
+                      <div class="timeline-dot"></div>
+                      <div class="timeline-right">
+                        <h3 class="position" data-translate="fundemental">Fundemental school</h3>
+                        
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+  
+          
+  
+        </div>
+  
+      </section><!-- /Resume Section -->
+  
+      <!-- Portfolio Section -->
+      <section id="portfolio" class="portfolio section">
+  
+        <!-- Section Title -->
+        <div class="container section-title" data-aos="fade-up">
+          <h2 data-translate="Portfolio">Portofolio</h2>
+          <div class="title-shape">
+            <svg viewBox="0 0 200 20" xmlns="http://www.w3.org/2000/svg">
+              <path d="M 0,10 C 40,0 60,20 100,10 C 140,0 160,20 200,10" fill="none" stroke="currentColor" stroke-width="2"></path>
+            </svg>
+          </div>
+          <p></p>
+        </div><!-- End Section Title -->
+  
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
+  
+          <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+  
+            <div class="portfolio-filters-container" data-aos="fade-up" data-aos-delay="200">
+              <ul class="portfolio-filters isotope-filters">
+                <li data-filter="*" class="filter-active">All Work</li>
+                <li data-filter=".filter-manage">Management</li>
+                <li data-filter=".filter-ecomerce">E-commerce</li>
+                <li data-filter=".filter-game">Animation/game</li>
+               
+              </ul> 
+            </div>
+  
+            <div class="row g-4 isotope-container" data-aos="fade-up" data-aos-delay="300">
+  
+              <!-- End Portfolio Item -->
+  
+              <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-ecomerce">
+                <div class="portfolio-card">
+                  <div class="portfolio-image">
+                    <img src="image/ecommerce.png" class="img-fluid" alt="" loading="lazy">
+                    <div class="portfolio-overlay">
+                      <div class="portfolio-actions">
+                        <a href="image/ecommerce.png" class="glightbox preview-link"><i class="bi bi-eye"></i></a>
+                        <a href="" class="details-link"><i class="bi bi-arrow-right"></i></a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="portfolio-content">
+                    <span class="category">E-commerce</span>
+                    <h3 data-translate="creat">Creative Brand Identity</h3>
+                    <p data-translate="sale">online sales web application with attractive design</p>
+                  </div>
+                </div>
+              </div><!-- End Portfolio Item -->
+  
+              <!-- End Portfolio Item -->
+  
+              <!-- End Portfolio Item -->
+  
+              <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-manage">
+                <div class="portfolio-card">
+                  <div class="portfolio-image">
+                    <img src="image/parkingmanage.png" class="img-fluid" alt="" loading="lazy">
+                    <div class="portfolio-overlay">
+                      <div class="portfolio-actions">
+                        <a href="image/parkingmanage.png" class="glightbox preview-link" data-gallery="portfolio-gallery-manage"><i class="bi bi-eye"></i></a>
+                        <a href="" class="details-link"><i class="bi bi-arrow-right"></i></a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="portfolio-content">
+                    <span class="category" >Management</span>
+                    <h3 data-translate="park">Parking Management System</h3>
+                   
+                  </div>
+                </div>
+              </div><!-- End Portfolio Item -->
+
+              <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-game">
+                <div class="portfolio-card">
+                  <div class="portfolio-image">
+                    <img src="image/game.png" class="img-fluid" alt="" loading="lazy">
+                    <div class="portfolio-overlay">
+                      <div class="portfolio-actions">
+                        <a href="image/game.png" class="glightbox preview-link" data-gallery="portfolio-gallery-game"><i class="bi bi-eye"></i></a>
+                        <a href="https://lucky2574.github.io/Galaxy-Multimedia/" ><i class="bi bi-arrow-right"></i></a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="portfolio-content">
+                    <span class="category">Animation/game</span></a>
+                    <h3>Galaxy Multimedia</h3>
+                    <p data-translate="run">Run to test</p>
+                  </div>
+                </div>
+              </div>
+  
+              <!-- End Portfolio Item -->
+  
+            </div><!-- End Portfolio Container -->
+  
+          </div>
+  
+        </div>
+  
+      </section><!-- /Portfolio Section -->
+  
+      <!-- Testimonials Section -->
+      <section id="testimonials" class="testimonials section light-background">
+  
+        <!-- Section Title -->
+        <div class="container section-title" data-aos="fade-up">
+          <h2 data-translate="testimonial">Testimonials</h2>
+          <div class="title-shape">
+            <svg viewBox="0 0 200 20" xmlns="http://www.w3.org/2000/svg">
+              <path d="M 0,10 C 40,0 60,20 100,10 C 140,0 160,20 200,10" fill="none" stroke="currentColor" stroke-width="2"></path>
+            </svg>
+          </div>
+         
+        </div><!-- End Section Title -->
+  
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
+  
+          <div class="testimonials-slider swiper init-swiper">
+            <script type="application/json" class="swiper-config">
+              {
+                "slidesPerView": 1,
+                "loop": true,
+                "speed": 600,
+                "autoplay": {
+                  "delay": 5000
+                },
+                "navigation": {
+                  "nextEl": ".swiper-button-next",
+                  "prevEl": ".swiper-button-prev"
+                }
+              }
+            </script>
+  
+            <div class="swiper-wrapper">
+  
+              <div class="swiper-slide">
+                <div class="testimonial-item">
+                  <div class="row">
+                    <div class="col-lg-8">
+                      <h2>Web Development Skills</h2>
+                      
+                      <p>
+                        Ismael Iradukunda has a remarkable ability to create visually appealing and highly functional websites. Their expertise in HTML and CSS ensures that every project not only looks great but also meets industry standards. I highly recommend their skills for any web development project
+                      </p>
+                      <div class="profile d-flex align-items-center">
+                        <img src="image/claude.jpg" class="profile-img" alt="">
+                        <div class="profile-info">
+                          <h3>Kabura claude</h3>
+                          <span>Client</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-4 d-none d-lg-block">
+                      <div class="featured-img-wrapper">
+                        <img src="image/claude.jpg" class="featured-img" alt="">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div><!-- End Testimonial Item -->
+  
+              <div class="swiper-slide">
+                <div class="testimonial-item">
+                  <div class="row">
+                    <div class="col-lg-8">
+                      <h2>Backend Development</h2>
+                      <p data-translate="claude">
+                        Working with Ismael Iradukunda on backend development in PHP and C# was a pleasure. They have an exceptional understanding of server-side programming, which significantly improved our application’s performance. Their problem-solving skills are commendable
+                      </p>
+                      
+                      <div class="profile d-flex align-items-center">
+                        <img src="image/david.jpg" class="profile-img" alt="">
+                        <div class="profile-info">
+                          <h3>Niyokwizigira David</h3>
+                          <span data-translate="colleague">Colleague</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-4 d-none d-lg-block">
+                      <div class="featured-img-wrapper">
+                        <img src="image/david.jpg" class="featured-img" alt="">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div><!-- End Testimonial Item -->
+  
+              <div class="swiper-slide">
+                <div class="testimonial-item">
+                  <div class="row">
+                    <div class="col-lg-8">
+                      <h2>
+                        JavaScript Proficiency
+                      </h2>
+                      <p data-translate="david">
+                        
+                       Ismael Iradukunda has a strong command of JavaScript, bringing interactivity and dynamic features to our web applications. Their ability to troubleshoot and optimize code has greatly enhanced our user experience. They are an invaluable asset to our team.
+                      </p>
+                      
+                      <div class="profile d-flex align-items-center">
+                        <img src="image/nzero.jpg" class="profile-img" alt="">
+                        <div class="profile-info">
+                          <h3>Nzambimana Janvier</h3>
+                          <span data-translate="freelancer">Freelancer</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-4 d-none d-lg-block">
+                      <div class="featured-img-wrapper">
+                        <img src="image/nzero.jpg" class="featured-img" alt="">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div><!-- End Testimonial Item -->
+  
+              <div class="swiper-slide">
+                <div class="testimonial-item">
+                  <div class="row">
+                    <div class="col-lg-8">
+                      <h2>WordPress Development</h2>
+                     
+                      <p data-translate="alima">
+                        "Ismael Iradukunda transformed our website using WordPress, creating a user-friendly interface that exceeded our expectations. Their attention to detail and understanding of plugins and themes made the process smooth and efficient. I can't recommend them enough!"
+                      </p>
+                      <div class="profile d-flex align-items-center">
+                        <img src="image/alim.jpg" class="profile-img" alt="">
+                        <div class="profile-info">
+                          <h3>Ange alima Irishura</h3>
+                          <span data-translate="store">Store Owner</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-4 d-none d-lg-block">
+                      <div class="featured-img-wrapper">
+                        <img src="image/alim.jpg" class="featured-img" alt="">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div><!-- End Testimonial Item -->
+  
+            </div>
+  
+            <div class="swiper-navigation w-100 d-flex align-items-center justify-content-center">
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
+            </div>
+  
+          </div>
+  
+        </div>
+  
+      </section><!-- /Testimonials Section -->
+  
+      <!-- Services Section -->
+      <section id="services" class="services section">
+  
+        <!-- Section Title -->
+        <div class="container section-title" data-aos="fade-up">
+          <h2>Services</h2>
+          <div class="title-shape">
+            <svg viewBox="0 0 200 20" xmlns="http://www.w3.org/2000/svg">
+              <path d="M 0,10 C 40,0 60,20 100,10 C 140,0 160,20 200,10" fill="none" stroke="currentColor" stroke-width="2"></path>
+            </svg>
+          </div>
+          <p data-translate="servdetail">Unlock the full potential of your digital presence with our comprehensive range of services. Whether you're looking to build a stunning website from the ground up, enhance user engagement with dynamic front-end features, or streamline your operations with powerful back-end solutions, we have you covered.</p>
+        </div><!-- End Section Title -->
+  
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
+  
+          <div class="row align-items-center">
+            <div class="col-lg-4 mb-5 mb-lg-0">
+              <h2 class="fw-bold mb-4 servies-title" data-translate="servicein">My expertise spans across HTML, CSS, JavaScript, PHP, C#, and Python, ensuring that every project is tailored to meet your unique needs. </h2>
+             
+              
+            </div>
+            <div class="col-lg-8">
+              <div class="row g-4">
+  
+                <div class="col-md-6" data-aos="fade-up" data-aos-delay="200">
+                  <div class="service-item">
+                    <i class="bi bi-globe icon"></i>
+                    <h3><a>Web Development</a></h3>
+                    <p data-translate="webdev">Crafting responsive and visually appealing websites tailored to your brand. I focus on clean, semantic code to ensure compatibility across all devices and browsers.</p>
+                  </div>
+                </div><!-- End Service Item -->
+  
+                <div class="col-md-6" data-aos="fade-up" data-aos-delay="300">
+                  <div class="service-item">
+                    <i class="bi bi-files icon"></i>
+                    <h3>Back-End Development</h3>
+                    <p data-translate="devservice">
+                      Developing robust server-side applications. I create APIs and manage databases, ensuring your application runs smoothly and efficiently.</p>
+                  </div>
+                </div><!-- End Service Item -->
+  
+                <div class="col-md-6" data-aos="fade-up" data-aos-delay="400">
+                  <div class="service-item">
+                    <i class="bi bi-lightbulb"></i>
+                    <h3><span data-translate="techincal">Technical Consulting</span></h3>
+                    <p data-translate="technicalservice">
+                      Advisory Services: Offering guidance on best practices, technology stacks, and project management to help you achieve your digital goals.</p>
+                  </div>
+                </div><!-- End Service Item -->
+  
+                <div class="col-md-6" data-aos="fade-up" data-aos-delay="500">
+                  <div class="service-item">
+                    <i class="bi bi-bounding-box-circles icon"></i>
+                    <h3> <span  data-translate="content">Content Management Systems</span></h3>
+                    <p data-translate="contentservice">Designing and developing custom WordPress sites. I offer theme customization, plugin development, and ongoing maintenance to keep your site up-to-date and secure</p>
+                  </div>
+                </div><!-- End Service Item -->
+  
+              </div>
+            </div>
+          </div>
+  
+        </div>
+  
+      </section><!-- /Services Section -->
+
+      <!-- Contact Section -->
+    <section id="contact" class="contact section light-background">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row g-5">
+          <div class="col-lg-6">
+            <div class="content" data-aos="fade-up" data-aos-delay="200">
+              <div class="section-category mb-3" data-translate="contactme">Contact Me</div>
+              <h2 class="display-5 mb-4" data-translate="contactdetails">I am always eager to connect with new opportunities and collaborations.</h2>
+              <p class="lead mb-4" data-translate="feedback">Whether you have a question, feedback, or just want to chat, please feel free to reach out. I look forward to hearing from you!</p>
+
+              <div class="contact-info mt-5">
+                <div class="info-item d-flex mb-3">
+                  <i class="bi bi-envelope-at me-3"></i>
+                  <span>ismaeliradukunda01@gmail.com</span>
+                </div>
+
+                <div class="info-item d-flex mb-3">
+                  <i class="bi bi-telephone me-3"></i>
+                  <span>+257 68505909</span>
+                </div>
+
+                <div class="info-item d-flex mb-4">
+                  <i class="bi bi-geo-alt me-3"></i>
+                  <span>Bujumbura, Chaussé du P.L.Rwagasore, campus kiriri</span>
+                </div>
+
+                <a href="#" class="map-link d-inline-flex align-items-center">
+                  Open Map
+                  <i class="bi bi-arrow-right ms-2"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="contact-form card" data-aos="fade-up" data-aos-delay="300">
+                <div class="card-body p-4 p-lg-5">
+                    <form id="contact-form" class="php-email-form" action="#" method="POST"> <!-- Added action="#" -->
+                        <div class="row gy-4">
+                            <div class="col-12">
+                                <input type="text" name="name" class="form-control" placeholder="Your Name" required>
+                            </div>
+                            <div class="col-12">
+                                <input data-translate="email" type="email" class="form-control" name="email" placeholder="Your Email" required>
+                            </div>
+                            <div class="col-12">
+                                <input type="text" class="form-control" name="subject" placeholder="Subject" required>
+                            </div>
+                            <div class="col-12">
+                                <textarea class="form-control" name="message" rows="6" placeholder="Message" required></textarea>
+                            </div>
+                            <div class="col-12 text-center">
+                                <div class="loading" style="display: none;" data-translate="load">Loading</div>
+                                <div class="error-message" style="display: none;"></div>
+                                <div class="sent-message" style="display: none;" data-translate="success">Your message has been sent. Thank you!</div>
+                                <button type="submit" class="btn btn-submit w-100" data-translate="submit">Submit Message</button>
+                            </div>
+                        </div>
+                    </form>
+
+                    
+                <!-- Vendor JS Files -->
+                <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+                <script src="assets/vendor/php-email-form/validate.js"></script>
+                <script src="assets/vendor/aos/aos.js"></script>
+                <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+                <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+                <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+                <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+                <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+                    <script src="assets/js/main.js"></script>
+        
+                    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+                    <script>
+                        (function() {
+                            emailjs.init("yDR5hyBnG14QABwrV"); // Public key
+                        })();
+        
+                        document.getElementById('contact-form').addEventListener('submit', function(event) {
+                            event.preventDefault();
+                            
+                            // Show loading message
+                            document.querySelector('.loading').style.display = 'block';
+
+                                                  emailjs.sendForm('service_0xdygd4', 'template_dtvcpbb', this)
+                          .then(function() {
+                              document.querySelector('.loading').style.display = 'none';
+                              document.querySelector('.sent-message').style.display = 'block';
+                          }, function(error) {
+                              document.querySelector('.loading').style.display = 'none';
+                              console.error('Error sending email:', error); // Log the full error
+                              document.querySelector('.error-message').innerText = 'Failed to send email: ' + error.text;
+                              document.querySelector('.error-message').style.display = 'block';
+                          });
+                              
+                            
+                        });
+                    </script>
+                </div>
+            </div>
+        </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- /Contact Section -->
+  
+    </main>
+  </div>
+
+  <footer id="footer" class="footer">
+    <div class="container">
+      <div class="copyright text-center ">
+        <p>© <span>Copyright</span> <strong class="px-1 sitename">Ismael</strong> <span>All Rights Reserved</span></p>
+      </div>
+      <div class="social-links d-flex justify-content-center">
+        <a href="https://x.com/ismaelirad5799"><i class="bi bi-twitter-x"></i></a>
+        <a href="https://github.com/Lucky2574" target="_blank"><i class="bi bi-github"></i></a>
+        <a href="https://www.facebook.com/profile.php?id=100080234683191"><i class="bi bi-facebook"></i></a>
+        <a href="https://www.instagram.com/ismaillucky32/"><i class="bi bi-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/ismael-iradukunda-ba41882a7/"><i class="bi bi-linkedin"></i></a>
+      </div>
+      <div class="credits">Designed by Ismael Iradukunda</div>
+    </div>
+  </footer>
+
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/en.js"></script>
+  <script src="assets/js/fr.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+  <script>
+    window.onload = function() {
+      const loadingLine = document.getElementById('loadingLine');
+      const mainContent = document.getElementById('mainContent');
+
+      // Start loading line animation
+      loadingLine.style.width = '100%';
+
+      // After 10 seconds, hide the loading and reveal the content
+      setTimeout(() => {
+        document.querySelector('.loading-container').style.display = 'none';
+        mainContent.classList.add('visible'); // Add visible class to reveal content
+        document.body.style.overflow = 'auto'; // Enable scrolling
+      }, 10000); // 10 seconds
+    };
+
+
+
+
+  
+    const translations = {
+    fr: translationsFr,
+    en: translationsEn
+};
+
+const languageSelector = document.getElementById('language');
+
+languageSelector.addEventListener('change', (event) => {
+    const selectedLanguage = event.target.value;
+    translatePage(selectedLanguage);
+});
+
+function translatePage(language) {
+    const elementsToTranslate = document.querySelectorAll('[data-translate]');
+
+    elementsToTranslate.forEach((element) => {
+        const key = element.getAttribute('data-translate');
+        if (translations[language][key]) {
+            element.textContent = translations[language][key];
+        }
+    });
+}
+
+// Initial translation in English
+translatePage('en');
+
+
+ const themeSelector = document.getElementById('theme');
+    const body = document.getElementById('body');
+
+    themeSelector.addEventListener('change', (event) => {
+      if (event.target.value === 'dark') {
+        body.classList.remove('light-mode');
+        body.classList.add('dark-mode');
+      } else {
+        body.classList.remove('dark-mode');
+        body.classList.add('light-mode');
+      }
+    });
+    
+  </script>
+</body>
+
+</html>
+
+
